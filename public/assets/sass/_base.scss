@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Avenir';
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+@mixin flex($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+$primary-red: #c00d0e;
+$secondary-red: #8b0100;
+$button: #313131;
+$white: #fff;
+$font: 'Avenir', 'Montserrat', sans-serif;

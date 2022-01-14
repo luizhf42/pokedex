@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
+.header {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  max-height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .logo {
+  max-width: 150px;
+  height: auto;
+}
+.header__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
+.search-pokemon {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-pokemon__input {
+  height: 35px;
+  width: 80%;
+  padding: 10px;
+  padding-right: 50px;
+}
+.search-pokemon__button {
+  width: 50px;
+  height: 35px;
+  margin-left: -50px;
+  background: #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-pokemon__icon {
+  height: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Avenir", "Montserrat", sans-serif;
+  font-weight: normal;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #c00d0e, #8b0100);
+}
+
+/*# sourceMappingURL=style.css.map */

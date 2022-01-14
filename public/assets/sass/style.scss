@@ -1,0 +1,18 @@
+@use "./_base";
+@import "./_header";
+@import "./main/form";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: base.$white;
+  font-family: base.$font;
+  font-weight: normal;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, base.$primary-red, base.$secondary-red);
+}

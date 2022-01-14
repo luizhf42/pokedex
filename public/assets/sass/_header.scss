@@ -1,0 +1,19 @@
+@use "./_base";
+
+.header {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  max-height: 150px;
+  @include base.flex(space-around, center);
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  &__title {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}

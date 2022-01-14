@@ -1,0 +1,25 @@
+@use "../base";
+
+.search-pokemon {
+  max-width: 500px;
+  @include base.flex();
+
+  &__input {
+    height: 35px;
+    width: 80%;
+    padding: 10px;
+    padding-right: 50px;
+  }
+
+  &__button {
+    width: 50px;
+    height: 35px;
+    margin-left: -50px;
+    background: base.$button;
+    @include base.flex();
+  }
+
+  &__icon {
+    height: 25px;
+  }
+}
