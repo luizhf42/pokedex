@@ -1,0 +1,6 @@
+@use "../_base";
+
+.main {
+  @include base.flex(center);
+  flex-direction: column;
+}

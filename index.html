@@ -12,12 +12,45 @@
     <img src="public/assets/images/pokemon-logo.png" alt="" class="logo">
     <h1 class="header__title">LH's Pokédex &#x1F422</h1>
   </header>
-
-  <main>
+  
+  <main class="main">
     <form class="search-pokemon">
       <input type="search" placeholder="Search by name or dex number" class="search-pokemon__input">
       <span class="search-pokemon__button"><img src="public/assets/images/search-icon.svg" alt="" class="search-pokemon__icon"></span>
     </form>
+    
+    <section class="pokemon">
+      <div class="pokemon__main-info">
+        <h2 class="pokemon__name">Wooper</h2>
+        <h3 class="pokemon__id">#194</h3>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png" alt class="pokemon__sprite">
+      </div>
+      
+      <div class="pokemon__other-info">
+        <article class="pokemon__stats">
+          <h3 class="pokemon__stats_title">Stats</h3>
+          
+          <div class="pokemon__stat">
+            <div class="pokemon__stat_hp pokemon__stat_bar"><span class="pokemon__stat_info">HP: 55</span></div>
+          </div>
+          <div class="pokemon__stat">
+            <div class="pokemon__stat_attack pokemon__stat_bar"><span class="pokemon__stat_info">Attack: 45</span></div>
+          </div>
+          <div class="pokemon__stat">
+            <div class="pokemon__stat_defense pokemon__stat_bar"><span class="pokemon__stat_info">Defense: 45</span></div>
+          </div>
+          <div class="pokemon__stat">
+            <div class="pokemon__stat_sp-attack pokemon__stat_bar"><span class="pokemon__stat_info">Sp. Attack: 25</span></div>
+          </div>
+          <div class="pokemon__stat">
+            <div class="pokemon__stat_sp-defense pokemon__stat_bar"><span class="pokemon__stat_info">Sp. Defense: 25</span></div>
+          </div>
+          <div class="pokemon__stat">
+            <div class="pokemon__stat_speed pokemon__stat_bar"><span class="pokemon__stat_info">Speed: 15</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 </body>
 </html>

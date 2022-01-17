@@ -1,0 +1,108 @@
+@use "../base";
+
+$main-border: 2px solid #161616;
+
+@mixin barWidth($width) {
+  width: $width;
+
+  @if $width == 100% {
+    border-radius: 3px;
+  } @else {
+    border-radius: 3px 0 0 3px;
+  }
+}
+
+.pokemon {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+
+  &__main-info {
+    background: #4646eb;
+    border: $main-border;
+    border-bottom-width: 1px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__name {
+    padding-top: 20px;
+  }
+
+  &__sprite {
+    width: 100%;
+  }
+
+  &__other-info {
+    border: $main-border;
+    border-top: 0;
+    padding-top: 20px;
+    background: #c0c0c0;
+  }
+
+  &__stats {
+    margin: auto;
+    width: 90%;
+    border-radius: 7px;
+    border: 1px solid #2b2b2b;
+
+    &_title {
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+      background: #2b2b2b;
+    }
+  }
+
+  &__stat {
+    border-radius: 3px;
+    width: 95%;
+    background: #aeaeae;
+    margin: 10px auto;
+    height: 25px;
+
+    &_bar {
+      position: relative;
+      height: 100%;
+    }
+
+    &_hp {
+      background: #ff5959;
+      @include barWidth(21.56%);
+    }
+
+    &_attack {
+      background: #f5ac78;
+      @include barWidth(17.64%);
+    }
+
+    &_defense {
+      background: #fae078;
+      @include barWidth(17.64%);
+    }
+
+    &_sp-attack {
+      background: #ff5959;
+      @include barWidth(9.8%);
+    }
+
+    &_sp-defense {
+      background: #f5ac78;
+      @include barWidth(9.8%);
+    }
+
+    &_speed {
+      background: #fae078;
+      @include barWidth(5.88%);
+    }
+
+    &_info {
+      color: #000;
+      padding-left: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+  }
+}

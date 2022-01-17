@@ -1,12 +1,14 @@
 @use "./_base";
 @import "./_header";
-@import "./main/form";
-
+@import "./main/_main";
+@import "./main/_form";
+@import "./main/_pokemon";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 body {
