@@ -69,7 +69,7 @@
 
 .pokemon {
   width: 90%;
-  max-width: 600px;
+  max-width: 500px;
   text-align: center;
 }
 .pokemon__main-info {
@@ -178,13 +178,13 @@
 
 @media screen and (min-width: 992px) {
   .pokemon {
-    max-width: 800px;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     align-items: stretch;
   }
   .pokemon__main-info {
-    width: 50%;
+    width: 40%;
     border: 2px solid #161616;
     border-radius: 10px 0 0 10px;
     display: flex;
@@ -193,10 +193,15 @@
     flex-direction: column;
   }
   .pokemon__other-info {
-    width: 50%;
+    width: 60%;
     border: 2px solid #161616;
     border-radius: 0 10px 10px 0;
     border-left: 0;
+  }
+  .pokemon__other-info_evolutions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 * {
