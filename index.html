@@ -24,11 +24,12 @@
         <h2 class="pokemon__name">Wooper</h2>
         <h3 class="pokemon__id">#194</h3>
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png" alt class="pokemon__sprite">
+        <p class="pokemon__types">Water / Ground</p>
       </div>
       
       <div class="pokemon__other-info">
-        <article class="pokemon__stats">
-          <h3 class="pokemon__stats_title">Stats</h3>
+        <article class="pokemon__stats pokemon__other-info_article">
+          <h3 class="pokemon__stats_title pokemon__other-info_title">Stats</h3>
           
           <div class="pokemon__stat">
             <div class="pokemon__stat_hp pokemon__stat_bar"><span class="pokemon__stat_info">HP: 55</span></div>
@@ -49,8 +50,41 @@
             <div class="pokemon__stat_speed pokemon__stat_bar"><span class="pokemon__stat_info">Speed: 15</span></div>
           </div>
         </article>
+
+        <article class="pokemon__abilities pokemon__other-info_article">
+          <h3 class="pokemon__other-info_title">Abilities</h3>
+          <div class="pokemon__abilities_names">
+            <p class="pokemon__abilities_names-normal">Damp / Water Absorb</p>
+            <p class="pokemon__abilities_names-hidden">Unaware</p>
+          </div>
+        </article>
+
+        <article class="pokemon__evolution-chain pokemon__other-info_article">
+          <h3 class="pokemon__other-info_title">Evolution Chain</h3>
+          <div class="pokemon__evolves-from">
+            <p class="pokemon__evolves-from_text">Evolves from:</p>
+            <img src="" alt="" class="pokemon__evolves-from_sprite">
+          </div>
+
+          <div class="pokemon__evolves-to">
+            <p class="pokemon__evolves-to_text">Evolves to:</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/195.png" alt="" class="pokemon__evolves-to_sprite">
+          </div>
+        </article>
       </div>
     </section>
   </main>
+
+  <script>
+    const evolvesToDiv = document.querySelector('.pokemon__evolves-to');
+    const evolvesFromDiv = document.querySelector('.pokemon__evolves-from');
+    const img1 = evolvesToDiv.children[1],
+    img2 = evolvesFromDiv.children[1];
+
+
+    if (img1.getAttribute('src') === "") evolvesToDiv.style.display = "none";
+    if (img2.getAttribute('src') === "") evolvesFromDiv.style.display = "none";
+
+  </script>
 </body>
 </html>

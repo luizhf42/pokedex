@@ -1,0 +1,23 @@
+@use "_base";
+
+@media screen and (min-width: 992px) {
+  .pokemon {
+    max-width: 800px;
+    @include base.flex(center, stretch);
+
+    &__main-info {
+      width: 50%;
+      border: base.$main-border;
+      border-radius: 10px 0 0 10px;
+      @include base.flex();
+      flex-direction: column;
+    }
+
+    &__other-info {
+      width: 50%;
+      border: base.$main-border;
+      border-radius: 0 10px 10px 0;
+      border-left: 0;
+    }
+  }
+}
