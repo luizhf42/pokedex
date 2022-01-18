@@ -3,4 +3,5 @@
 .main {
   @include base.flex(center);
   flex-direction: column;
+  padding-bottom: 10px;
 }

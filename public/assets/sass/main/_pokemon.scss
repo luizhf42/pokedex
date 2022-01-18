@@ -1,14 +1,13 @@
 @use "../base";
 
-$main-border: 2px solid #161616;
+@mixin evolutionChainDivs {
+  padding: 10px 0;
+  width: 100%;
+  height: 150px;
+  @include base.flex(space-around);
 
-@mixin barWidth($width) {
-  width: $width;
-
-  @if $width == 100% {
-    border-radius: 3px;
-  } @else {
-    border-radius: 3px 0 0 3px;
+  &_sprite {
+    height: 100%;
   }
 }
 
@@ -19,7 +18,7 @@ $main-border: 2px solid #161616;
 
   &__main-info {
     background: #4646eb;
-    border: $main-border;
+    border: base.$main-border;
     border-bottom-width: 1px;
     border-radius: 10px 10px 0 0;
   }
@@ -32,70 +31,78 @@ $main-border: 2px solid #161616;
     width: 100%;
   }
 
-  &__other-info {
-    border: $main-border;
-    border-top: 0;
-    padding-top: 20px;
-    background: #c0c0c0;
+  &__types {
+    font-weight: 600;
+    margin-bottom: 15px;
   }
 
-  &__stats {
-    margin: auto;
-    width: 90%;
-    border-radius: 7px;
-    border: 1px solid #2b2b2b;
+  &__other-info {
+    color: base.$black;
+    border: base.$main-border;
+    border-radius: 0 0 10px 10px;
+    border-top: 0;
+    padding-top: 20px;
+    background: base.$other-info-bg;
+
+    &_article {
+      margin: 0 auto 15px;
+      width: 90%;
+      border-radius: 7px;
+      border: 1px solid base.$other-info-article;
+    }
 
     &_title {
+      color: base.$white;
       border-radius: 5px 5px 0 0;
       width: 100%;
-      background: #2b2b2b;
+      background: base.$other-info-article;
     }
   }
 
   &__stat {
     border-radius: 3px;
     width: 95%;
-    background: #aeaeae;
+    background: base.$stat-bg;
     margin: 10px auto;
     height: 25px;
 
     &_bar {
       position: relative;
       height: 100%;
+      border-radius: 3px 0 0 3px;
     }
 
     &_hp {
-      background: #ff5959;
-      @include barWidth(21.56%);
+      background: base.$hp-bg;
+      width: 21.56%;
     }
 
     &_attack {
-      background: #f5ac78;
-      @include barWidth(17.64%);
+      background: base.$atk-bg;
+      width: 17.64%;
     }
 
     &_defense {
-      background: #fae078;
-      @include barWidth(17.64%);
+      background: base.$def-bg;
+      width: 17.64%;
     }
 
     &_sp-attack {
-      background: #ff5959;
-      @include barWidth(9.8%);
+      background: base.$spatk-bg;
+      width: 9.8%;
     }
 
     &_sp-defense {
-      background: #f5ac78;
-      @include barWidth(9.8%);
+      background: base.$spdef-bg;
+      width: 9.8%;
     }
 
     &_speed {
-      background: #fae078;
-      @include barWidth(5.88%);
+      background: base.$speed-bg;
+      width: 5.88%;
     }
 
     &_info {
-      color: #000;
       padding-left: 10px;
       position: absolute;
       top: 50%;
@@ -104,5 +111,26 @@ $main-border: 2px solid #161616;
       font-size: 0.8rem;
       white-space: nowrap;
     }
+  }
+
+  &__abilities {
+    &_names {
+      padding: 8px;
+      font-size: 0.9rem;
+
+      &-hidden {
+        margin-top: 5px;
+
+        &:after {
+          content: " (hidden)";
+          color: base.$hidden-ability;
+        }
+      }
+    }
+  }
+
+  &__evolves-to,
+  &__evolves-from {
+    @include evolutionChainDivs;
   }
 }

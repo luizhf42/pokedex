@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-@font-face {
-  font-family: 'Avenir';
-  src: url(../fonts/AvenirLTStd-Book.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 @mixin flex($justify-content: center, $align-items: center) {
   display: flex;
@@ -11,8 +6,25 @@
   align-items: $align-items;
 }
 
+// miscellaneous
 $primary-red: #c00d0e;
 $secondary-red: #8b0100;
-$button: #313131;
 $white: #fff;
-$font: 'Avenir', 'Montserrat', sans-serif;
+$black: #000;
+$font: 'Montserrat', sans-serif;
+
+// form
+$button: #313131;
+
+// pokemon section
+$main-border: 2px solid #161616;
+$other-info-bg: #c0c0c0;
+$other-info-article: #2b2b2b;
+$stat-bg: #aeaeae;
+$hp-bg: #ff5959;
+$atk-bg: #f5ac78;
+$def-bg: #fae078;
+$spatk-bg: #9db7f5;
+$spdef-bg: #a7db8d;
+$speed-bg: #fa92b2;
+$hidden-ability: #5a5a5a;
