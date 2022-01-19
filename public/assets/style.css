@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 .header {
   margin: auto;
   width: 100%;
@@ -27,7 +28,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .search-pokemon {
@@ -45,7 +46,7 @@
   padding-right: 50px;
   border-radius: 5px;
   border: 0;
-  box-shadow: 0 0 10px #00000070;
+  box-shadow: 0 0 7px #00000070;
 }
 .search-pokemon__input::placeholder {
   font-size: 0.8rem;
@@ -64,37 +65,40 @@
   cursor: pointer;
 }
 .search-pokemon__icon {
-  height: 25px;
+  height: 20px;
 }
 
 .pokemon {
   width: 90%;
   max-width: 500px;
   text-align: center;
+  filter: drop-shadow(0 0 5px #00000070);
 }
 .pokemon__main-info {
   background: #4646eb;
-  border: 2px solid #161616;
   border-bottom-width: 1px;
   border-radius: 10px 10px 0 0;
 }
 .pokemon__name {
-  padding-top: 20px;
+  padding: 20px 0 5px;
+  font-size: 1.5rem;
+}
+.pokemon__id {
+  font-size: 1.1rem;
 }
 .pokemon__sprite {
   width: 100%;
 }
 .pokemon__types {
   font-weight: 600;
-  margin-bottom: 15px;
+  padding-bottom: 20px;
 }
 .pokemon__other-info {
   color: #000;
-  border: 2px solid #161616;
   border-radius: 0 0 10px 10px;
   border-top: 0;
-  padding-top: 20px;
-  background: #c0c0c0;
+  padding: 20px 0 5px;
+  background: #e4e4e4;
 }
 .pokemon__other-info_article {
   margin: 0 auto 15px;
@@ -103,6 +107,8 @@
   border: 1px solid #2b2b2b;
 }
 .pokemon__other-info_title {
+  font-size: 1.2rem;
+  padding: 2px;
   color: #fff;
   border-radius: 5px 5px 0 0;
   width: 100%;
@@ -155,14 +161,17 @@
 }
 .pokemon__abilities_names {
   padding: 8px;
-  font-size: 0.9rem;
+}
+.pokemon__abilities_names-normal {
+  font-size: 1rem;
 }
 .pokemon__abilities_names-hidden {
+  font-size: 1rem;
   margin-top: 5px;
 }
 .pokemon__abilities_names-hidden:after {
   content: " (hidden)";
-  color: #5a5a5a;
+  color: #929292;
 }
 .pokemon__evolves-to, .pokemon__evolves-from {
   padding: 10px 0;
@@ -176,6 +185,35 @@
   height: 100%;
 }
 
+.footer {
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+}
+.footer__text {
+  font-weight: 600;
+}
+.footer__author {
+  color: #4747ff;
+}
+
+@media screen and (max-width: 320px) {
+  * {
+    font-size: 14px;
+  }
+
+  .header {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .header__logo {
+    max-width: 200px;
+  }
+
+  .pokemon__stat {
+    height: 20px;
+  }
+}
 @media screen and (min-width: 992px) {
   .pokemon {
     max-width: 1000px;
@@ -185,7 +223,6 @@
   }
   .pokemon__main-info {
     width: 40%;
-    border: 2px solid #161616;
     border-radius: 10px 0 0 10px;
     display: flex;
     justify-content: center;
@@ -194,7 +231,6 @@
   }
   .pokemon__other-info {
     width: 60%;
-    border: 2px solid #161616;
     border-radius: 0 10px 10px 0;
     border-left: 0;
   }
@@ -202,6 +238,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .pokemon__evolves-to, .pokemon__evolves-from {
+    max-width: 50%;
   }
 }
 * {
@@ -215,8 +254,7 @@ body {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #c00d0e, #8b0100);
+  background: linear-gradient(to bottom, #dc0f0f, #8b0100);
 }
 
 /*# sourceMappingURL=style.css.map */

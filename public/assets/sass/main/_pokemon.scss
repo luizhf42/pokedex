@@ -15,16 +15,21 @@
   width: 90%;
   max-width: 500px;
   text-align: center;
+  filter: drop-shadow(0 0 5px #00000070);
 
   &__main-info {
     background: #4646eb;
-    border: base.$main-border;
     border-bottom-width: 1px;
     border-radius: 10px 10px 0 0;
   }
 
   &__name {
-    padding-top: 20px;
+    padding: 20px 0 5px;
+    font-size: 1.5rem;
+  }
+
+  &__id {
+    font-size: 1.1rem;
   }
 
   &__sprite {
@@ -33,15 +38,14 @@
 
   &__types {
     font-weight: 600;
-    margin-bottom: 15px;
+    padding-bottom: 20px;
   }
 
   &__other-info {
     color: base.$black;
-    border: base.$main-border;
     border-radius: 0 0 10px 10px;
     border-top: 0;
-    padding-top: 20px;
+    padding: 20px 0 5px;
     background: base.$other-info-bg;
 
     &_article {
@@ -52,6 +56,8 @@
     }
 
     &_title {
+      font-size: 1.2rem;
+      padding: 2px;
       color: base.$white;
       border-radius: 5px 5px 0 0;
       width: 100%;
@@ -116,9 +122,12 @@
   &__abilities {
     &_names {
       padding: 8px;
-      font-size: 0.9rem;
-
+      
+      &-normal {
+        font-size: 1rem;
+      }
       &-hidden {
+        font-size: 1rem;
         margin-top: 5px;
 
         &:after {

@@ -1,5 +1,26 @@
 @use "_base";
 
+@media screen and (max-width: 320px) {
+  * {
+    font-size: 14px;
+  }
+
+  .header {
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &__logo {
+      max-width: 200px;
+    }
+  }
+
+  .pokemon {
+    &__stat {
+      height: 20px;
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
   .pokemon {
     max-width: 1000px;
@@ -7,7 +28,6 @@
 
     &__main-info {
       width: 40%;
-      border: base.$main-border;
       border-radius: 10px 0 0 10px;
       @include base.flex();
       flex-direction: column;
@@ -15,13 +35,17 @@
 
     &__other-info {
       width: 60%;
-      border: base.$main-border;
       border-radius: 0 10px 10px 0;
       border-left: 0;
 
       &_evolutions {
         @include base.flex();
       }
+    }
+
+    &__evolves-to,
+    &__evolves-from {
+      max-width: 50%;
     }
   }
 }

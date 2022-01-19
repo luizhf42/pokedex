@@ -13,7 +13,7 @@
     padding-right: 50px;
     border-radius: 5px;
     border: 0;
-    box-shadow: 0 0 10px #00000070;
+    box-shadow: 0 0 7px #00000070;
 
     &::placeholder {
       font-size: 0.8rem;
@@ -35,6 +35,6 @@
   }
 
   &__icon {
-    height: 25px;
+    height: 20px;
   }
 }
