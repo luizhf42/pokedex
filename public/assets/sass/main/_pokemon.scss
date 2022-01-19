@@ -33,6 +33,7 @@
   }
 
   &__sprite {
+    margin: 10px auto;
     width: 100%;
   }
 
@@ -142,5 +143,9 @@
   &__evolves-to,
   &__evolves-from {
     @include evolutionChainDivs;
+  }
+
+  &__name, &__id, &__types, &__abilities-normal, &__abilities-hidden {
+    text-transform: capitalize;
   }
 }

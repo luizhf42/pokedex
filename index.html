@@ -20,11 +20,11 @@
     </form>
     
     <section class="pokemon">
-      <div class="pokemon__main-info">
-        <h2 class="pokemon__name">Wooper</h2>
-        <h3 class="pokemon__id">#194</h3>
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png" alt class="pokemon__sprite">
-        <p class="pokemon__types">Water / Ground</p>
+      <div class="pokemon__main-info" id="main-info">
+        <h2 class="pokemon__name" id="name">Wooper</h2>
+        <h3 class="pokemon__id" id="id">#194</h3>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png" alt class="pokemon__sprite" id="sprite">
+        <p class="pokemon__types" id="types">Water / Ground</p>
       </div>
       
       <div class="pokemon__other-info">
@@ -83,6 +83,7 @@
     </p>
   </footer>
 
+  <script src="public/bundle.js"></script>
   <script>
     const evolvesToDiv = document.querySelector('.pokemon__evolves-to');
     const evolvesFromDiv = document.querySelector('.pokemon__evolves-from');

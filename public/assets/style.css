@@ -87,6 +87,7 @@
   font-size: 1.1rem;
 }
 .pokemon__sprite {
+  margin: 10px auto;
   width: 100%;
 }
 .pokemon__types {
@@ -184,6 +185,9 @@
 }
 .pokemon__evolves-to_sprite, .pokemon__evolves-from_sprite {
   height: 100%;
+}
+.pokemon__name, .pokemon__id, .pokemon__types, .pokemon__abilities-normal, .pokemon__abilities-hidden {
+  text-transform: capitalize;
 }
 
 .footer {
