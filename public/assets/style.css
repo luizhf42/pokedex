@@ -90,6 +90,7 @@
   width: 100%;
 }
 .pokemon__types {
+  font-size: 1.1rem;
   font-weight: 600;
   padding-bottom: 20px;
 }
