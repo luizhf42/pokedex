@@ -1,0 +1,20 @@
+@use "_base";
+
+.footer {
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+
+  &__text {
+    font-weight: 600;
+  }
+
+  &__author {
+    color: base.$link;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
