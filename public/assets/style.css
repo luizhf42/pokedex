@@ -172,8 +172,9 @@
   margin-top: 5px;
 }
 .pokemon__abilities_names-hidden:after {
-  content: " (hidden)";
+  content: attr(data-after);
   color: #929292;
+  text-transform: none;
 }
 .pokemon__evolves-to, .pokemon__evolves-from {
   padding: 10px 0;
@@ -186,7 +187,7 @@
 .pokemon__evolves-to_sprite, .pokemon__evolves-from_sprite {
   height: 100%;
 }
-.pokemon__name, .pokemon__id, .pokemon__types, .pokemon__abilities-normal, .pokemon__abilities-hidden {
+.pokemon__name, .pokemon__id, .pokemon__types, .pokemon__abilities_names-normal, .pokemon__abilities_names-hidden {
   text-transform: capitalize;
 }
 

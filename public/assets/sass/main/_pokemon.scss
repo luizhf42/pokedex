@@ -133,8 +133,9 @@
         margin-top: 5px;
 
         &:after {
-          content: " (hidden)";
+          content: attr(data-after); 
           color: base.$hidden-ability;
+          text-transform: none;
         }
       }
     }
@@ -145,7 +146,7 @@
     @include evolutionChainDivs;
   }
 
-  &__name, &__id, &__types, &__abilities-normal, &__abilities-hidden {
+  &__name, &__id, &__types, &__abilities_names-normal, &__abilities_names-hidden {
     text-transform: capitalize;
   }
 }
