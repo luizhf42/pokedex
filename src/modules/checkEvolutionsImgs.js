@@ -1,3 +1,5 @@
+const noEvolutionsMsg = document.getElementById("no-evolutions");
+
 export const checkEvolutionsImgs = (preEvolutionImg, nextEvolutionImg) => {
   if (preEvolutionImg.getAttribute("src") === "")
     preEvolutionImg.parentElement.style.display = "none";
@@ -6,7 +8,9 @@ export const checkEvolutionsImgs = (preEvolutionImg, nextEvolutionImg) => {
     nextEvolutionImg.parentElement.style.display = "none";
   else nextEvolutionImg.parentElement.style.display = "flex";
 
-  if (preEvolutionImg.getAttribute("src") === "" && nextEvolutionImg.getAttribute("src") === "") {
-    
-  }
-}
+  if (
+    preEvolutionImg.getAttribute("src") === "" &&
+    nextEvolutionImg.getAttribute("src") === ""
+  ) noEvolutionsMsg.style.display = "block";
+  else noEvolutionsMsg.style.display = "none";
+};

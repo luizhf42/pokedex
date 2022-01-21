@@ -66,6 +66,10 @@
       width: 100%;
       background: base.$other-info-article;
     }
+
+    &_evolutions {
+      height: 150px;
+    }
   }
 
   &__stat {
@@ -148,7 +152,8 @@
   }
 
   &__no-evolutions-msg {
-    
+    padding: 30px; 
+    display: none;
   }
 
   &__name, &__id, &__types, &__abilities_names-normal, &__abilities_names-hidden {

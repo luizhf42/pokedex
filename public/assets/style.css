@@ -117,6 +117,9 @@
   width: 100%;
   background: #2b2b2b;
 }
+.pokemon__other-info_evolutions {
+  height: 150px;
+}
 .pokemon__stat {
   border-radius: 3px;
   width: 95%;
@@ -187,6 +190,10 @@
 }
 .pokemon__evolves-to_sprite, .pokemon__evolves-from_sprite {
   height: 100%;
+}
+.pokemon__no-evolutions-msg {
+  padding: 30px;
+  display: none;
 }
 .pokemon__name, .pokemon__id, .pokemon__types, .pokemon__abilities_names-normal, .pokemon__abilities_names-hidden {
   text-transform: capitalize;
