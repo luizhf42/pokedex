@@ -147,6 +147,10 @@
     @include evolutionChainDivs;
   }
 
+  &__no-evolutions-msg {
+    
+  }
+
   &__name, &__id, &__types, &__abilities_names-normal, &__abilities_names-hidden {
     text-transform: capitalize;
   }

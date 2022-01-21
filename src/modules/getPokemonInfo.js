@@ -8,13 +8,17 @@ const errorMsg = document.querySelector(".error-msg");
 
 export const makeRequest = async (pokemonName) => {
   try {
-    const response = await axios.get(pokemonName);
+    const response = await axios.get(`pokemon/${pokemonName}`);
     const { name, id, types, stats, abilities } = response.data;
-    input.value = "";
 
-    errorMsg.style.display = "none";
+    const evolutionsResponse = await axios.get(`pokemon-species/${id}/`);
+    const { evolves_from_species, evolution_chain } = evolutionsResponse.data;
+
     showMainInfo(name, id, types);
-    showSecondaryInfo(abilities, stats);
+    showSecondaryInfo(abilities, stats, evolves_from_species, evolution_chain, id);
+
+    input.value = "";
+    errorMsg.style.display = "none";
   } catch (error) {
     anime({
       targets: "#input, #search-btn",

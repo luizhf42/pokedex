@@ -65,12 +65,14 @@
           <div class="pokemon__other-info_evolutions">
             <div class="pokemon__evolves-from">
               <p class="pokemon__evolves-from_text">Evolves from:</p>
-              <img src="" alt="" class="pokemon__evolves-from_sprite">
+              <img src="" alt="" class="pokemon__evolves-from_sprite" id="preEvolution">
             </div>
             <div class="pokemon__evolves-to">
               <p class="pokemon__evolves-to_text">Evolves to:</p>
-              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/195.png" alt="" class="pokemon__evolves-to_sprite">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/195.png" alt="" class="pokemon__evolves-to_sprite" id="nextEvolution">
             </div>
+
+            <p class="pokemon__no-evolutions-msg">No evolution chain</p>
           </div>
         </article>
       </div>
@@ -85,16 +87,5 @@
   </footer>
 
   <script src="public/bundle.js"></script>
-  <script>
-    const evolvesToDiv = document.querySelector('.pokemon__evolves-to');
-    const evolvesFromDiv = document.querySelector('.pokemon__evolves-from');
-    const img1 = evolvesToDiv.children[1],
-    img2 = evolvesFromDiv.children[1];
-
-
-    if (img1.getAttribute('src') === "") evolvesToDiv.style.display = "none";
-    if (img2.getAttribute('src') === "") evolvesFromDiv.style.display = "none";
-
-  </script>
 </body>
 </html>
