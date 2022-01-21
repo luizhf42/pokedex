@@ -118,6 +118,7 @@
   background: #2b2b2b;
 }
 .pokemon__other-info_evolutions {
+  position: relative;
   height: 150px;
 }
 .pokemon__stat {
@@ -192,7 +193,10 @@
   height: 100%;
 }
 .pokemon__no-evolutions-msg {
-  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 .pokemon__name, .pokemon__id, .pokemon__types, .pokemon__abilities_names-normal, .pokemon__abilities_names-hidden {

@@ -21,7 +21,7 @@
     background: #4646eb;
     border-bottom-width: 1px;
     border-radius: 10px 10px 0 0;
-    text-shadow: 0 0 10px #000; 
+    text-shadow: 0 0 10px #000;
   }
 
   &__name {
@@ -68,6 +68,7 @@
     }
 
     &_evolutions {
+      position: relative;
       height: 150px;
     }
   }
@@ -129,7 +130,7 @@
   &__abilities {
     &_names {
       padding: 8px;
-      
+
       &-normal {
         font-size: 1rem;
       }
@@ -138,7 +139,7 @@
         margin-top: 5px;
 
         &:after {
-          content: attr(data-after); 
+          content: attr(data-after);
           color: base.$hidden-ability;
           text-transform: none;
         }
@@ -152,11 +153,18 @@
   }
 
   &__no-evolutions-msg {
-    padding: 30px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
   }
 
-  &__name, &__id, &__types, &__abilities_names-normal, &__abilities_names-hidden {
+  &__name,
+  &__id,
+  &__types,
+  &__abilities_names-normal,
+  &__abilities_names-hidden {
     text-transform: capitalize;
   }
 }
