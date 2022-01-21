@@ -119,7 +119,7 @@
 }
 .pokemon__other-info_evolutions {
   position: relative;
-  height: 150px;
+  min-height: 150px;
 }
 .pokemon__stat {
   border-radius: 3px;
