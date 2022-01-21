@@ -6,7 +6,6 @@ const searchBtn = document.querySelector("#search-btn");
 
 const main = () => {
   const inputValue = formatInput();
-  inputValue = inputValue.toLowerCase();
 
   makeRequest(inputValue);
 };

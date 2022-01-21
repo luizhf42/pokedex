@@ -78,6 +78,7 @@
   background: #4646eb;
   border-bottom-width: 1px;
   border-radius: 10px 10px 0 0;
+  text-shadow: 0 0 10px #000;
 }
 .pokemon__name {
   padding: 20px 0 5px;
@@ -100,7 +101,7 @@
   border-radius: 0 0 10px 10px;
   border-top: 0;
   padding: 20px 0 5px;
-  background: #e4e4e4;
+  background: #dadada;
 }
 .pokemon__other-info_article {
   margin: 0 auto 15px;
@@ -265,6 +266,13 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   background: linear-gradient(to bottom, #dc0f0f, #8b0100);
+}
+
+.error-msg {
+  margin-bottom: 20px;
+  font-size: 1.35rem;
+  text-shadow: 0 0 10px #000;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

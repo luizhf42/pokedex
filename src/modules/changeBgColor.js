@@ -4,7 +4,7 @@ const typeColors = {
   fire: "#fc7c4e",
   grass: "#48d07a",
   bug: "#60d351",
-  normal: "#e4e4e4",
+  normal: "#dadada",
   water: "#4646eb",
   poison: "#5c279d",
   electric: "#ffce46",

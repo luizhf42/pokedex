@@ -6,7 +6,6 @@
 @import "./_footer";
 @import "./_responsive";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +17,12 @@ body {
   color: base.$white;
   font-family: base.$font;
   font-weight: normal;
-  // min-height: 100vh;
   background: linear-gradient(to bottom, base.$primary-red, base.$secondary-red);
+}
+
+.error-msg {
+  margin-bottom: 20px;
+  font-size: 1.35rem;
+  text-shadow: 0 0 10px #000; 
+  display: none;
 }

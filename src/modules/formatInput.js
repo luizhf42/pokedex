@@ -5,6 +5,7 @@ const formatInput = () => {
 
   formattedInput = formattedInput.trim();
   formattedInput = formattedInput.replace(" ", "-");
+  formattedInput = formattedInput.toLowerCase();
 
   return formattedInput;
 };
