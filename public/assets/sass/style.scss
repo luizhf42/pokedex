@@ -3,6 +3,7 @@
 @import "./main/_main";
 @import "./main/_form";
 @import "./main/_pokemon";
+@import "./main/_randomize";
 @import "./_footer";
 @import "./_responsive";
 
@@ -20,9 +21,13 @@ body {
   background: linear-gradient(to bottom, base.$primary-red, base.$secondary-red);
 }
 
+#or {
+  font-size: 0.9rem;
+}
+
 .error-msg {
   margin-bottom: 20px;
   font-size: 1.35rem;
-  text-shadow: 0 0 10px #000; 
+  text-shadow: 0 0 10px #000;
   display: none;
 }

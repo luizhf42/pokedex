@@ -3,7 +3,7 @@
 .search-pokemon {
   width: 100%;
   max-width: 500px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   @include base.flex();
 
   &__input {
@@ -13,7 +13,7 @@
     padding-right: 50px;
     border-radius: 5px;
     border: 0;
-    box-shadow: 0 0 7px #00000070;
+    box-shadow: base.$box-shadow;
 
     &::placeholder {
       font-size: 0.8rem;
