@@ -6,7 +6,9 @@ export const showAbilities = (abilities) => {
   let hasHiddenAbility = false;
   abilities.forEach((ability) => {
     if (ability.is_hidden) {
-      hiddenAbilityElement.innerText = ability.ability.name;
+      const hiddenAbility = ability.ability.name;
+      const formattedHiddenAbility = hiddenAbility.replace("-", " ");
+      hiddenAbilityElement.innerText = formattedHiddenAbility;
       hiddenAbilityElement.setAttribute("data-after", " (hidden)");
       hasHiddenAbility = true;
     } else {

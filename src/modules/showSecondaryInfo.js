@@ -9,7 +9,7 @@ export const showSecondaryInfo = (
   evolutionChain,
   id
 ) => {
-  showAbilities(abilities);
   showStats(stats);
+  showAbilities(abilities);
   showEvolutionInfo(evolvesFromSpecies, evolutionChain.url, id);
 };
