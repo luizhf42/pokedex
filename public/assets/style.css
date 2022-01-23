@@ -219,6 +219,9 @@
   border-radius: 5px;
   font-weight: 600;
 }
+.randomize-pokemon__button :hover {
+  cursor: pointer;
+}
 .randomize-pokemon__icon {
   height: 23px;
 }

@@ -12,6 +12,10 @@
     background: base.$button;
     border-radius: 5px;
     font-weight: 600;
+
+    :hover {
+      cursor: pointer;
+    }
   }
 
   &__icon {
