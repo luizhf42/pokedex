@@ -5,6 +5,7 @@ import { showMainInfo } from "./showMainInfo";
 import { showSecondaryInfo } from "./showSecondaryInfo";
 
 const errorMsg = document.querySelector(".error-msg");
+const pokemonInfoSection = document.querySelector(".pokemon");
 
 export const makeRequest = async (pokemon) => {
   try {
@@ -14,8 +15,15 @@ export const makeRequest = async (pokemon) => {
     const evolutionsResponse = await axios.get(`pokemon-species/${id}/`);
     const { evolves_from_species, evolution_chain } = evolutionsResponse.data;
 
+    pokemonInfoSection.style.visibility = "visible";
     showMainInfo(name, id, types);
-    showSecondaryInfo(abilities, stats, evolves_from_species, evolution_chain, id);
+    showSecondaryInfo(
+      abilities,
+      stats,
+      evolves_from_species,
+      evolution_chain,
+      id
+    );
 
     input.value = "";
     errorMsg.style.display = "none";
