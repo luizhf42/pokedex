@@ -3,11 +3,15 @@ import { makeRequest } from "./modules/getPokemonInfo";
 import { checkEvolutionsImgs } from "./modules/checkEvolutionsImgs";
 import { preEvolutionImg } from "./modules/showPreEvolution";
 import { nextEvolutionImg } from "./modules/showNextEvolution";
+import { randomize, randomizeButton } from "./modules/randomizePokemon";
 
+randomize();
 checkEvolutionsImgs(preEvolutionImg, nextEvolutionImg);
 
+randomizeButton.addEventListener("click", randomize, false);
+
 const form = document.querySelector("form");
-const searchBtn = document.querySelector("#search-btn");
+const searchButton = document.querySelector("#search-btn");
 
 const main = () => {
   const inputValue = formatInput();
@@ -15,7 +19,7 @@ const main = () => {
   makeRequest(inputValue);
 };
 
-searchBtn.addEventListener("click", main, false);
+searchButton.addEventListener("click", main, false);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

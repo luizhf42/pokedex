@@ -6,9 +6,9 @@ import { showSecondaryInfo } from "./showSecondaryInfo";
 
 const errorMsg = document.querySelector(".error-msg");
 
-export const makeRequest = async (pokemonName) => {
+export const makeRequest = async (pokemon) => {
   try {
-    const response = await axios.get(`pokemon/${pokemonName}`);
+    const response = await axios.get(`pokemon/${pokemon}`);
     const { name, id, types, stats, abilities } = response.data;
 
     const evolutionsResponse = await axios.get(`pokemon-species/${id}/`);
