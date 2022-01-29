@@ -15,7 +15,7 @@ A pokédex using the PokéAPI and plain JavaScript.
 
 ### The project
 
-The site requests the info from the PokéAPI with the name/ID of the pokémon in the input. It shows its name, ID, artwork, types, stats, abilities and evolution chain (if it exists).
+The site requests the info from the PokéAPI with the name/ID of the pokémon in the input. It shows its name, ID, artwork, types, stats, abilities and form varieties.
 
 ### Screenshot
 
@@ -23,7 +23,7 @@ The site requests the info from the PokéAPI with the name/ID of the pokémon in
 
 ### Links
 
-- [Live Site URL](https://luizhf42.github.io/pokedex)
+- [Live Site URL](https://pokedex-luizhf42.vercel.app/)
 
 ## Process
 
