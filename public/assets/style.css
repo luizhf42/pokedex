@@ -227,7 +227,7 @@
   border-radius: 5px;
   font-weight: 600;
 }
-.randomize-pokemon__button :hover {
+.randomize-pokemon__button:hover {
   cursor: pointer;
 }
 .randomize-pokemon__icon {
@@ -293,9 +293,6 @@
     align-items: center;
     height: 190px;
     flex-direction: row;
-  }
-  .pokemon__evolves-to, .pokemon__evolves-from {
-    max-width: 50%;
   }
 }
 * {
