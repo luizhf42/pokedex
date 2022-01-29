@@ -1,6 +1,5 @@
 import { showAbilities } from "./showAbilities";
 import { showStats } from "./showStats";
-import { showEvolutionInfo } from "./showEvolutionInfo";
 
 export const showSecondaryInfo = (
   abilities,

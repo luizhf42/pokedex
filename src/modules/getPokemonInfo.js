@@ -12,18 +12,12 @@ export const makeRequest = async (pokemon) => {
     const response = await axios.get(`pokemon/${pokemon}`);
     const { name, id, types, stats, abilities } = response.data;
 
-    const evolutionsResponse = await axios.get(`pokemon-species/${id}/`);
-    const { evolves_from_species, evolution_chain } = evolutionsResponse.data;
+    const speciesResponse = await axios.get(`pokemon-species/${id}/`);
+    const { varieties } = speciesResponse.data;
 
     pokemonInfoSection.style.visibility = "visible";
     showMainInfo(name, id, types);
-    showSecondaryInfo(
-      abilities,
-      stats,
-      evolves_from_species,
-      evolution_chain,
-      id
-    );
+    showSecondaryInfo(abilities, stats, varieties, id);
 
     input.value = "";
     errorMsg.style.display = "none";

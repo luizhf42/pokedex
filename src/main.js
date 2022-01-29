@@ -1,8 +1,5 @@
 import { formatInput, input } from "./modules/formatInput";
 import { makeRequest } from "./modules/getPokemonInfo";
-import { checkEvolutionsImgs } from "./modules/checkEvolutionsImgs";
-import { preEvolutionImg } from "./modules/showPreEvolution";
-import { nextEvolutionImg } from "./modules/showNextEvolution";
 import { randomize, randomizeButton } from "./modules/randomizePokemon";
 
 randomize();
