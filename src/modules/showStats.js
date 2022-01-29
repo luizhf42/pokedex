@@ -34,14 +34,20 @@ export const showStats = (stats) => {
   ];
 
   for (let i = 0; i < barsIds.length; i++) {
+    let actualBarId = barsIds[i];
+    actualBarId = actualBarId.replace("#", "");
+    const actualBar = document.getElementById(actualBarId);
+    const width = calculateWidth(statsArray[i]);
     anime({
       targets: barsIds[i],
-      width: `${calculateWidth(statsArray[i])}%`,
+      width: `${width}%`,
       easing: "linear",
       loop: false,
-      duration: 1000
+      duration: 1000,
     });
-    
+
+    if (width >= 100) actualBar.style.borderRadius = "3px";
+    else actualBar.style.borderRadius = "3px 0 0 3px";
   }
 
   hpBar.firstChild.innerText = `HP: ${hpStat}`;
