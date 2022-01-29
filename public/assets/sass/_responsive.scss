@@ -38,8 +38,10 @@
       border-radius: 0 10px 10px 0;
       border-left: 0;
 
-      &_evolutions {
+      &_varieties {
         @include base.flex();
+        height: 190px;
+        flex-direction: row;
       }
     }
 

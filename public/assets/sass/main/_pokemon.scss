@@ -57,8 +57,9 @@
     }
 
     &_varieties {
+      flex-direction: column;
       @include base.flex();
-      height: 190px;
+      min-height: 190px;
     }
   }
 
@@ -153,7 +154,7 @@
     }
 
     &_name {
-      padding-bottom: 8px;
+      margin-bottom: 5px;
     }
   }
 

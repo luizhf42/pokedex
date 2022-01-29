@@ -119,10 +119,11 @@
   background: #2b2b2b;
 }
 .pokemon__other-info_varieties {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 190px;
+  min-height: 190px;
 }
 .pokemon__stat {
   border-radius: 3px;
@@ -200,7 +201,7 @@
   width: fit-content;
 }
 .pokemon__variety_name {
-  padding-bottom: 8px;
+  margin-bottom: 5px;
 }
 .pokemon__default-form_name::after {
   content: " (default)";
@@ -286,10 +287,12 @@
     border-radius: 0 10px 10px 0;
     border-left: 0;
   }
-  .pokemon__other-info_evolutions {
+  .pokemon__other-info_varieties {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 190px;
+    flex-direction: row;
   }
   .pokemon__evolves-to, .pokemon__evolves-from {
     max-width: 50%;
