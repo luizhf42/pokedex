@@ -23,7 +23,7 @@ The site requests the info from the PokéAPI with the name/ID of the pokémon in
 
 ### Links
 
-- [Live Site URL](https://luizhf42.github.io/pokedex)
+- [Live Site URL](https://pokedex-luizhf42.vercel.app/)
 
 ## Process
 
