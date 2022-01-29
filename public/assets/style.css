@@ -119,8 +119,10 @@
   background: #2b2b2b;
 }
 .pokemon__other-info_varieties {
-  position: relative;
-  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
 }
 .pokemon__stat {
   border-radius: 3px;
@@ -183,24 +185,29 @@
   text-transform: none;
 }
 .pokemon__varieties {
-  padding: 10px 0;
-  width: 100%;
-  height: 150px;
+  height: auto;
+}
+.pokemon__variety {
+  height: 170px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 30%;
 }
-.pokemon__varieties_sprite {
-  height: 100%;
+.pokemon__variety_sprite {
+  height: 88%;
+  width: fit-content;
 }
-.pokemon__no-varieties-msg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+.pokemon__variety_name {
+  padding-bottom: 8px;
 }
-.pokemon__name, .pokemon__id, .pokemon__types, .pokemon__abilities_names-normal, .pokemon__abilities_names-hidden {
+.pokemon__default-form_name::after {
+  content: " (default)";
+  color: #929292;
+  text-transform: none;
+}
+.pokemon__name, .pokemon__id, .pokemon__types, .pokemon__abilities_names-normal, .pokemon__abilities_names-hidden, .pokemon__variety_name {
   text-transform: capitalize;
 }
 
