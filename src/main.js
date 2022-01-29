@@ -3,7 +3,6 @@ import { makeRequest } from "./modules/getPokemonInfo";
 import { randomize, randomizeButton } from "./modules/randomizePokemon";
 
 randomize();
-checkEvolutionsImgs(preEvolutionImg, nextEvolutionImg);
 
 randomizeButton.addEventListener("click", randomize, false);
 
