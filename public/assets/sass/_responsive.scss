@@ -43,7 +43,8 @@
         height: 190px;
         flex-direction: row;
 
-        &--rotom {
+        &_rotom {
+          overflow-x: scroll;
           margin: 0 3px 3px;
 
           &::-webkit-scrollbar {
@@ -57,13 +58,12 @@
           }
 
           &::-webkit-scrollbar-thumb:hover {
-            background: #919191;
+            background: base.$scrollbar-thumb-hover;
           }
 
           &::-webkit-scrollbar-track {
-            background: #f0f0f0;
+            background: base.$other-info-bg;
             border-radius: 0px;
-            box-shadow: inset 0px 0px 0px 0px #f0f0f0;
           }
         }
       }

@@ -308,24 +308,24 @@
     height: 190px;
     flex-direction: row;
   }
-  .pokemon__other-info_varieties--rotom {
+  .pokemon__other-info_varieties_rotom {
+    overflow-x: scroll;
     margin: 0 3px 3px;
   }
-  .pokemon__other-info_varieties--rotom::-webkit-scrollbar {
+  .pokemon__other-info_varieties_rotom::-webkit-scrollbar {
     width: 4px;
     height: 4px;
   }
-  .pokemon__other-info_varieties--rotom::-webkit-scrollbar-thumb {
+  .pokemon__other-info_varieties_rotom::-webkit-scrollbar-thumb {
     background: #aeaeae;
     border-radius: 3px;
   }
-  .pokemon__other-info_varieties--rotom::-webkit-scrollbar-thumb:hover {
+  .pokemon__other-info_varieties_rotom::-webkit-scrollbar-thumb:hover {
     background: #919191;
   }
-  .pokemon__other-info_varieties--rotom::-webkit-scrollbar-track {
-    background: #f0f0f0;
+  .pokemon__other-info_varieties_rotom::-webkit-scrollbar-track {
+    background: #dadada;
     border-radius: 0px;
-    box-shadow: inset 0px 0px 0px 0px #f0f0f0;
   }
   .pokemon__variety {
     min-width: 30%;
