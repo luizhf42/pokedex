@@ -44,5 +44,9 @@
         flex-direction: row;
       }
     }
+
+    &__variety {
+      min-width: 30%;
+    }
   }
 }

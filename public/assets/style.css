@@ -194,7 +194,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
 }
 .pokemon__variety_sprite {
   height: 88%;
@@ -293,6 +293,9 @@
     align-items: center;
     height: 190px;
     flex-direction: row;
+  }
+  .pokemon__variety {
+    min-width: 30%;
   }
 }
 * {

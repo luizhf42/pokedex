@@ -146,7 +146,7 @@
     height: 170px;
     @include base.flex();
     flex-direction: column;
-    width: 30%;
+    width: 100%;
 
     &_sprite {
       height: 88%;
