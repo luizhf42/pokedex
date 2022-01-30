@@ -60,6 +60,14 @@
       flex-direction: column;
       @include base.flex();
       min-height: 190px;
+
+      &--rotom {
+        overflow-x: scroll;
+        padding: 0 15px;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
     }
   }
 
@@ -148,6 +156,12 @@
     flex-direction: column;
     width: 100%;
 
+    &_rotom {
+      height: 170px;
+      @include base.flex();
+      flex-direction: column;
+    }
+
     &_sprite {
       height: 88%;
       width: fit-content;
@@ -157,14 +171,6 @@
       margin-bottom: 5px;
     }
   }
-
-  // &__no-varieties-msg {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   display: none;
-  // }
 
   &__default-form_name {
     &::after {
