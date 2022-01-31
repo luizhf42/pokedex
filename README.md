@@ -30,7 +30,7 @@ The site requests the info from the PokéAPI with the name/ID of the pokémon in
 ### Built with
 
 - HTML5
-- CSS3
+- SCSS
 - JavaScript
 - Axios
 - Mobile-first workflow
