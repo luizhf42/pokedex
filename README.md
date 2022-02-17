@@ -1,4 +1,4 @@
-# Pokedéx ![](https://img.shields.io/github/license/luizhf42/to-do-app?style=for-the-badge)
+# Pokedéx ![](https://img.shields.io/github/license/luizhf42/pokedex?style=for-the-badge)
 A pokédex using the PokéAPI and plain JavaScript.
 
 ## Table of contents
